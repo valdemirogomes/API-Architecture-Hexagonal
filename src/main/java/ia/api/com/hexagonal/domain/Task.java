@@ -5,13 +5,15 @@ public class Task {
     private String name;
     private String description;
     private  Boolean done;
-    
-    public Task(String description, Boolean done, String name, Integer id) {
+
+    public Task(Integer id, String name, String description, Boolean done) {
+        this.id = id;
+        this.name = name;
         this.description = description;
         this.done = done;
-        this.name = name;
-        this.id = id;
     }
+    public Task(){}
+
 
     public Integer getId() {
         return id;
