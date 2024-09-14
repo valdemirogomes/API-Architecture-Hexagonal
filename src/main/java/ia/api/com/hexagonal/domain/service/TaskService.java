@@ -3,10 +3,8 @@ package ia.api.com.hexagonal.domain.service;
 import ia.api.com.hexagonal.domain.Task;
 import ia.api.com.hexagonal.domain.ports.TaskRepositoryPort;
 import ia.api.com.hexagonal.domain.ports.TaskServicePort;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
-@Service
 public class TaskService implements TaskServicePort {
 
     private final TaskRepositoryPort taskRepositoryPort;

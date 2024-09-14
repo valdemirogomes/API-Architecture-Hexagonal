@@ -8,6 +8,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 @AllArgsConstructor
@@ -25,6 +26,11 @@ public class TaskRepositoryPortImpl implements TaskRepositoryPort {
 
     @Override
     public List<Task> findAllTask() {
-        return List.of();
+        List<TaskEntity> taskEntities=  taskRepository.findAll();
+        return taskEntities
+                .stream()
+                .map(taskEntity -> modelMapper.map(taskEntity,Task.class))
+                .collect(Collectors.toList());
+
     }
 }
