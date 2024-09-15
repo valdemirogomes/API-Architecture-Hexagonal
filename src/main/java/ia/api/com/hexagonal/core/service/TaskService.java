@@ -1,10 +1,10 @@
-package ia.api.com.hexagonal.domain.service;
+package ia.api.com.hexagonal.core.service;
 
-import ia.api.com.hexagonal.domain.Task;
-import ia.api.com.hexagonal.domain.ports.TaskRepositoryPort;
-import ia.api.com.hexagonal.domain.ports.TaskServicePort;
-
+import ia.api.com.hexagonal.core.domain.Task;
+import ia.api.com.hexagonal.core.ports.TaskRepositoryPort;
+import ia.api.com.hexagonal.core.ports.TaskServicePort;
 import java.util.List;
+
 public class TaskService implements TaskServicePort {
 
     private final TaskRepositoryPort taskRepositoryPort;
@@ -14,8 +14,9 @@ public class TaskService implements TaskServicePort {
     }
 
     @Override
-    public Task saveTask(Task task) {
-        return taskRepositoryPort.saveTask(task);
+    public Task createTask(Task task) {
+
+        return taskRepositoryPort.createTask(task);
     }
 
     @Override

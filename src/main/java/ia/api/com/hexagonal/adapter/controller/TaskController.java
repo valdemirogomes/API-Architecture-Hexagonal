@@ -1,7 +1,7 @@
 package ia.api.com.hexagonal.adapter.controller;
 
-import ia.api.com.hexagonal.domain.Task;
-import ia.api.com.hexagonal.domain.ports.TaskServicePort;
+import ia.api.com.hexagonal.core.domain.Task;
+import ia.api.com.hexagonal.core.ports.TaskServicePort;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,7 +15,7 @@ public class TaskController {
 
     @PostMapping
     public Task createTask(@RequestBody Task task){
-        return taskServicePort.saveTask(task);
+        return taskServicePort.createTask(task);
     }
     @GetMapping
     public List<Task> listTak(){

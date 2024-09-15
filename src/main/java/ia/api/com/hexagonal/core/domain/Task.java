@@ -1,4 +1,4 @@
-package ia.api.com.hexagonal.domain;
+package ia.api.com.hexagonal.core.domain;
 
 public class Task {
     private Integer id;
@@ -6,14 +6,14 @@ public class Task {
     private String description;
     private  Boolean done;
 
+    public Task(){}
+
     public Task(Integer id, String name, String description, Boolean done) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.done = done;
     }
-    public Task(){}
-
 
     public Integer getId() {
         return id;
