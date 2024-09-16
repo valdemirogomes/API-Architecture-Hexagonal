@@ -1,4 +1,6 @@
-**Este projeto, tem como objetivo mostrar o funcionamento de uma** ***Arquitetura Hexagonal.***
+**Este projeto, tem como objetivo mostrar o funcionamento de uma** ***Arquitetura Hexagonal.***  
+  
+**Descrição do projeto: baseia-se, em um** ***gerenciador de tarefas.***  
   
 Vale lembrar, que esse modelo arquitetural independe de linguagem de programação.  
   
