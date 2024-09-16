@@ -1,4 +1,4 @@
-**Este projeto, tem como objetivo mostrar o funcionamento de uma*****Arquitetura Hexagonal.***
+**Este projeto, tem como objetivo mostrar o funcionamento de uma** ***Arquitetura Hexagonal.***
   
 Vale lembrar, que esse modelo arquitetural independe de linguagem de programação.  
   
@@ -7,15 +7,17 @@ fazendo que você possa trocar banco, serviços ou até mesmo a forma como é co
 
 **Tecnologias utilizadas:**
   
-Java  
+Java 17  
 Spring Boot  
 Spring Web  
-Lombok       
-Modelo Cliente/Servidor REST  
-JPA  
-Banco H2  
-Model Mapper  
+Spring JPA  
+Lombok  
+Arquitetura REST  
+Arquitetura Hexagonal  
+Banco de Dados H2  
+Model Mapper    
 
-**IDE:**  
+**IDE:**
+  
 Intellij - IDE
   
