@@ -1,4 +1,4 @@
-package ia.api.com.hexagonal.core.service;
+package ia.api.com.hexagonal.core;
 
 import ia.api.com.hexagonal.core.domain.Task;
 import ia.api.com.hexagonal.core.ports.TaskRepositoryPort;
