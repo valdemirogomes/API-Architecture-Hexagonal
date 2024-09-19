@@ -2,7 +2,7 @@ package ia.api.com.hexagonal.adapter.infra;
 
 import ia.api.com.hexagonal.core.ports.TaskRepositoryPort;
 import ia.api.com.hexagonal.core.ports.TaskServicePort;
-import ia.api.com.hexagonal.core.service.TaskService;
+import ia.api.com.hexagonal.core.TaskService;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
